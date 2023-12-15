@@ -1,6 +1,6 @@
 import csv
 
-class DataStorage:
+class DataStorage:   #Data storage class
     @staticmethod
     def get_data():
         data = []

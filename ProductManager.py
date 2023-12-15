@@ -1,6 +1,6 @@
 from Product import Product
 from DataStorage import DataStorage
-class ProductManager:
+class ProductManager:    #Product manager class, Business logic to manage the stores logic
     def __init__(self):
         self.products = []
         self.load_data()

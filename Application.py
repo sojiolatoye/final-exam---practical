@@ -1,12 +1,13 @@
 from Product import Product
 from ProductManager import ProductManager
 
-class Application:          #Olumide Olatoye 991710777
-    def __init__(self, product_manager):
+class Application:          # Application class 
+
+    def __init__(self, product_manager):    #Olumide Olatoye 991710777
         self.product_manager = product_manager
 
 
-    def show_main_menu(self):
+    def show_main_menu(self):   #Show Main Menu
         while True:
             print("\nMain Menu:")
             print("1. Display all products")
@@ -30,21 +31,21 @@ class Application:          #Olumide Olatoye 991710777
             else:
                 print("Invalid choice. Please try again.")
 
-    def display_all_products(self):
+    def display_all_products(self):             #display all products
         for product in manager.products:
             print(product)
 
-    def display_products_by_type(self):
+    def display_products_by_type(self):         #Display products by type
         category = input("Enter product type (Phone/Computer): ")
         filtered_products = [product for product in manager.products if product.category.lower() == category.lower()]
         for product in filtered_products:
             print(product)
 
-    def display_total_revenue(self):
+    def display_total_revenue(self):     #Display total revenue 
         revenue = manager.total_revenue()
         print(f"Total Revenue: {revenue}")
 
-    def add_new_product(self):
+    def add_new_product(self):            #Add a new product
         code = input("Enter product code: ")
         name = input("Enter product name: ")
         category = input("Enter product category: ")
