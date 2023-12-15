@@ -1,3 +1,5 @@
+from Product import Product
+from DataStorage import DataStorage
 class ProductManager:
     def __init__(self):
         self.products = []

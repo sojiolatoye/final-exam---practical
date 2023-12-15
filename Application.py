@@ -1,4 +1,7 @@
-class Application:
+from Product import Product
+from ProductManager import ProductManager
+
+class Application:          #Olumide Olatoye 991710777
     def __init__(self, product_manager):
         self.product_manager = product_manager
 
